@@ -1,9 +1,17 @@
 function Feed() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <main>
+      <section>
+        {/* Stories */}
+        {/* Post */}
+      </section>
+
+      <section>
+        {/* Mini Profile */}
+        {/* suggestions */}
+      </section>
+    </main>
+  );
 }
 
-export default Feed
+export default Feed;
