@@ -1,4 +1,4 @@
-import faker from "faker";
+// import faker from "faker";
 import { useEffect, useState } from "react";
 import Story from "./Story";
 
