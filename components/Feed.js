@@ -1,3 +1,4 @@
+import MiniProfile from "./MiniProfile";
 import Posts from "./Posts";
 import Stories from "./Stories";
 
@@ -10,7 +11,7 @@ function Feed() {
       </section>
 
       <section className="col-span-1">
-        {/* Mini Profile */}
+        <MiniProfile />
         {/* suggestions */}
       </section>
     </main>
