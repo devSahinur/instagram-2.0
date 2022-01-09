@@ -36,13 +36,13 @@ function Post({ post }) {
     onSnapshot(collection(db, "posts", id, "likes"), (snapshot) =>
       setLikes(snapshot.docs)
     );
-  }, [db, id]);
+  }, [id]);
 
   useEffect(() => {
     setHasLiked(
       likes.findIndex((like) => like.id === session?.user?.uid) !== -1
     );
-  }, [likes]);
+  }, [likes,session?.user?.uid]);
 
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function Post({ post }) {
       ),
       (snapshot) => setComments(snapshot.docs)
     );
-  }, [db, id]);
+  }, [id]);
 
 
   const likePost = async () => {
