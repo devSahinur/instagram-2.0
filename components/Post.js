@@ -14,18 +14,19 @@ function Post({ post }) {
       {/* Header */}
       <div className="flex items-center p-5">
         <img
-          src={post.userImg}
+          // src={post.data().userImg}
+          src="https://i.ibb.co/dG9tksD/download.jpg"
           alt="user profile pic"
           className="rounded-full h-12 w-12 object-contain border p-1 mr-3"
         />
-        <p className="flex-1 font-bold">{post?.username}</p>
+        <p className="flex-1 font-bold">{post?.data().username}</p>
         <DotsHorizontalIcon className="h-5 cursor-pointer" />
       </div>
 
       {/* image */}
       <img
-        src={post.image}
-        alt={post.caption}
+        src={post.data().image}
+        alt={post.data().caption}
         className="object-contain w-full"
       />
 
@@ -41,8 +42,8 @@ function Post({ post }) {
 
       {/* caption */}
       <p className="p-5 truncate">
-          <span className="font-bold mr-1">{post.username} </span>
-          {post.caption}
+          <span className="font-bold mr-1">{post.data().username} </span>
+          {post.data().caption}
       </p>
 
       {/* comments */}
