@@ -87,8 +87,8 @@ function Post({ post }) {
       {/* Header */}
       <div className="flex items-center p-5">
         <img
-          // src={post.data().userImg}
-          src="https://i.ibb.co/dG9tksD/download.jpg"
+          src={post.data().userImg}
+          // src="https://i.ibb.co/dG9tksD/download.jpg"
           alt="user profile pic"
           className="rounded-full h-12 w-12 object-contain border p-1 mr-3"
         />
